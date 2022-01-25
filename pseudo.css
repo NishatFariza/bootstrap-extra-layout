@@ -1,0 +1,32 @@
+h1::before {
+  content: "Hello ";
+  color: aqua;
+}
+h1::after {
+  content: " Bye ";
+  color: blueviolet;
+}
+
+blockquote::before {
+  content: open-quote;
+  color: aqua;
+  font-size: 1.5rem;
+}
+blockquote::after {
+  content: close-quote;
+  color: aqua;
+  font-size: 1.5rem;
+}
+.Section-title {
+  text-align: center;
+  display: inline-block;
+}
+
+.Section-title::after,
+.Section-title:hover::before {
+  content: "";
+  display: block;
+  background-color: aqua;
+  height: 2px;
+  width: 100%;
+}
